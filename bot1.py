@@ -115,7 +115,7 @@ async def classplus(client, message):
 
     try:
 
-        reply = await message.chat.ask(
+        reply = await message.chat.reply(
             (
                 '**'
                 'Send your credentials as shown below.\n\n'
