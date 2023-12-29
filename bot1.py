@@ -59,6 +59,7 @@ async def account_login(bot: Client, m: Message):
     s = requests.Session()
     editable = await m.reply_text("**Send Token from ClassPlus App**")
     input1: Message = await bot.listen(editable.chat.id)
+    print("Received message:", input1.text)
     raw_text0 = input1.text
 async def classplus(client, message):
 
