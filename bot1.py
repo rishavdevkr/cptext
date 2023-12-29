@@ -49,7 +49,7 @@ bot = Client(
     bot_token= "6847175705:AAHbkU8GFmzoxR9dCQTr6RuZ4NQsev5ufz0"
 )
 
-@Client.on_message(
+@bot.on_message(
     filters.private
     & filters.command(['classplus'])
 )
